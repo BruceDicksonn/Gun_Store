@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf')format('truetype');
+}
+
+/*root*/
+:root{
+    --cor-default: #232220;
+
+    --font-destaque: 'Bebas Neue';
+    --font-default: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+} /* agora falta alinhar as coisas*/
+
+p{
+    font-family: var(--font-default);
+    line-height: 25px;
+}
+
+/*Header*/
+header{
+    background-color: #EEEEEE;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+header > a > img {
+    width: 300px;
+}
+
+
+/* nav */
+nav#nav {
+    margin-top: 0px;
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+nav#nav > a {
+    font-family: var(--font-destaque);
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 8px;
+    margin-right: 5px;
+    color: black;
+}
+
+nav#nav > a:hover {
+    transition-duration: 0.5s;
+    background-color: #EEEEEE;
+    color: rgb(204, 14, 14);
+}
+
+main{
+    max-width: 1200px;
+    min-width: 300px;
+    margin: auto;
+}
+
+hr{  
+    max-width: 1200px;
+}
+
+main > #sobre > h2 {
+    font-family: var(--font-destaque);
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+main > #sobre {
+    padding: 20px;
+    text-align: justify;
+}
+
+main > #sobre p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+main > #sobre > aside > p {
+    text-align: center;
+}
+
+main > #sobre > h3 {
+    font-family: var(--font-default);
+    font-weight:bold;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+main > #sobre > ol {
+    font-family: var(--font-default);
+    font-size: 13px;
+    letter-spacing: 1px;
+    list-style-position: inside;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+main > #sobre > ol > li {
+    margin-bottom: 8px;
+}
+
+
+main > #formulario{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main > #formulario > h2{
+    font-family: var(--font-destaque);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+main > #formulario > form > input {
+    padding: 10px;
+    max-width: 230px;
+    border: 1px solid black;
+    font-size: 1em;
+    background-color: #d8d2d2;
+}
+
+main > #formulario > form > #button {
+    padding: 10px;
+    max-width: 150px;
+    background-color: #D02000;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    border: 1px solid black;
+}
+
+main > #formulario > form > #button:hover {
+    background-color: black;
+}
+
+main > #contatos {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+main > #contatos > ul > li > h3 {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > #contatos > ul > li {
+    margin-bottom: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: #73dcec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links > a {
+    text-decoration: none;
+    color: #73dcec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links:hover {
+    color: rgb(85, 7, 7);
+    transition-duration: 0.4s;
+}
+
+.links > a:hover {
+    color: rgb(85, 7, 7);
+    transition-duration: 0.4s;
+}
+
+.links > a#fb > img:hover {
+    background-color: #4267B2;
+    border-radius: 20px;
+}
+
+.links > a#tt > img:hover {
+    background-color: #36B9FF;
+    border-radius: 20px;
+}
+
+.links > a#insta > img:hover {
+    background-image: linear-gradient(to top, #C7539A,#518EC9,#EDA822,#D62555,#E54723,#4950A2);
+    border-radius: 20px;
+}
+
+.links > a#yt > img:hover {
+    background-color: rgb(250, 85, 85);
+    border-radius: 20px;
+}
+
+footer{
+    margin-bottom: 30px;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+

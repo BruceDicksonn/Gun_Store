@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf')format('truetype');
+}
+
+/*root*/
+:root{
+    --cor-default: #232220;
+
+    --font-destaque: 'Bebas Neue';
+    --font-default: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+} /* agora falta alinhar as coisas*/
+
+p{
+    font-family: var(--font-default);
+    line-height: 25px;
+}
+
+/*Header*/
+header{
+    background-color: #EEEEEE;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+header a > img {
+    width: 300px;
+}
+
+
+/* nav */
+nav#nav {
+    margin-top: 0px;
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+nav#nav > a {
+    font-family: var(--font-destaque);
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 8px;
+    margin-right: 5px;
+    color: black;
+}
+
+nav#nav > a:hover {
+    transition-duration: 0.5s;
+    background-color: #EEEEEE;
+    color: rgb(204, 14, 14);
+}
+
+
+div#banner{
+    margin-bottom: 10px;
+}
+
+
+div#banner > picture > img{
+    max-width: 100%;
+}
+
+
+.headgun{
+    border: 2px solid black;
+    max-width: 100%;
+    background-color: #232220;
+    color: white;
+}
+
+.headgun a {
+    text-decoration: none;
+    color: white;
+}
+
+.headgun a > p:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.headgun a > p {
+    margin-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: left;
+}
+
+.headgun a > img{
+    max-width: 100%;
+    display: block;
+    height: 200px;
+}
+
+.headgun a > h3 {
+    margin-top: 5px;
+    text-align: right;
+    color: green;
+}
+
+main{
+    max-width: 1200px;
+    min-width: 300px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#mostruarioDeArmas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 800px;
+    grid-gap: 20px;
+    margin: auto;
+}
+
+/*quando o grid chegar a 600px ele separa por duas colunas*/
+@media (max-width:600px){
+    #mostruarioDeArmas {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 500px;
+        grid-gap: 20px;
+        margin: auto;
+    }
+}
+
+@media (max-width:400px){
+    #mostruarioDeArmas {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .headgun {
+        max-width: 60%;
+        margin: auto;
+    }
+}
+
+
+article {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 28px;
+}
+
+#mostruarioDeArmas > hr{
+    max-width: 100%px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+hr{  
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main > #sobre > h2 {
+    font-family: var(--font-destaque);
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+main > #sobre {
+    padding: 20px 0px;
+    text-align: justify;
+}
+
+main > #sobre p {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+main > #sobre > aside > p {
+    text-align: center;
+}
+
+main > #formulario{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main > #formulario > h2{
+    font-family: var(--font-destaque);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+main > #formulario > form > input {
+    padding: 10px;
+    max-width: 230px;
+    border: 1px solid black;
+    font-size: 1em;
+    background-color: #d8d2d2;
+}
+
+main > #formulario > form > #button {
+    padding: 10px;
+    max-width: 150px;
+    background-color: #D02000;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    border: 1px solid black;
+}
+
+main > #formulario > form > #button:hover {
+    background-color: black;
+}
+
+main > #contatos {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+main > #contatos > ul > li > h3 {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > #contatos > ul > li {
+    margin-bottom: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: #73dcec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links > a {
+    text-decoration: none;
+    color: #73dcec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links:hover {
+    color: rgb(85, 7, 7);
+    transition-duration: 0.4s;
+}
+
+.links > a:hover {
+    color: rgb(85, 7, 7);
+    transition-duration: 0.4s;
+}
+
+.links > a#fb > img:hover {
+    background-color: #4267B2;
+    border-radius: 20px;
+}
+
+.links > a#tt > img:hover {
+    background-color: #36B9FF;
+    border-radius: 20px;
+}
+
+.links > a#insta > img:hover {
+    background-image: linear-gradient(to top, #C7539A,#518EC9,#EDA822,#D62555,#E54723,#4950A2);
+    border-radius: 20px;
+}
+
+.links > a#yt > img:hover {
+    background-color: rgb(250, 85, 85);
+    border-radius: 20px;
+}
+
+footer{
+    margin-bottom: 30px;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+
